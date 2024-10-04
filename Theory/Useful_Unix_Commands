@@ -1,0 +1,55 @@
+####################################################################################
+#ls = list directory content in the current or specified directory
+#Examples:
+    #ls ~/Test
+    #ls -l --> shows a detailed list (file size etc.)
+    #ls -lt --> sorts files by modification time
+    #ls -lS --> sort files by size
+    #ls -p --> appends a / to directories to make it easier to distinguish between files and directories
+    #ls -R --> shows you the contents of the subdirectories as well
+###################################################################################
+#grep = search for text patterns within files and print them/give them as output
+#grep [options] pattern file1 file2
+#Examples:
+    #grep "hello" file.txt --> prints all lines that contain the word "hello"
+    #ls -l | grep "file2" --> grep can be used without a file to search if its part of a stream
+    #grep -i --> case-insensitive search
+    #grep -n --> prints the matching lines along with the line number
+    #grep -c --> returns the count of lines that match the pattern
+    #grep -R "hello" /path/to/directory --> searches in all files and subdirectories of the specified directory
+    #grep -v --> shows all lines that do not contain the pattern
+    #grep -w --> searches for the exact word as opposed to matching parts of a word
+#The regular expressions grep searches for can also be made more complex:
+    #"h.llo" --> . can match any single character --> if you want to seach for a . you have to insert a backslash "\" before the dot
+    #"^hello" --> only matches lines that start with "hello"
+    #"hello$" --> only matches lines that end with "hello"
+#With the command grep you can also use so called extended regular expressions which can contain ?, +, |, ()
+    #grep -E "cat|dog" file.txt--> matches lines that contain either cat or dog
+    #grep -E "(cat|dog)treat" file.txt--> matches lines containing either catreat or dogtreat
+    #grep -E "a{3}" file.txt --> matches lines containg exactly three consecutive "a"s
+    #grep -E "a{2,4}" file.txt --> matches lines containing between 2 and 4 consecutive "a"s
+    #grep -E "colou?r" file.txt --> makes the preceding character optional
+    #grep -E "a*" file.txt --> matches any line containing zero or more "a"s
+    #grep -E "a+" file.txt --> matches any line containing one or more "a"s
+    #grep -E "[0-9]" file.txt --> matches any line containing any of the digits 0-9 (Note: in [] all symbols except ^ and - loose their special meaning)
+############################################################################
+#find = 
+
+############################################################################
+#mv = 
+
+#cat
+
+#echo
+
+#cp
+
+#rm -i
+
+#touch
+
+#mkdir
+
+#rmdir
+
+
